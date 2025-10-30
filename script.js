@@ -99,7 +99,7 @@ document.getElementById("valider").onclick = () => {
     quantite: p.qte
   }));
 
-  fetch("https://script.google.com/macros/s/AKfycbyXCaaKPs3XP8vRHSSDXGe1J9QDWiXY-LJeLuHHwZ9PX1H-edqAA0vr_l_a8XPcco8fTA/exec", { // <-- Remplace ici
+  fetch("https://script.google.com/macros/s/AKfycbwuLtYaTwBc1MtB3CmG7EQcVbN6ARjqht16tQq40I2ExlC2wdQ7ltvRlHdkpbD4yiQlLA/exec", { // <-- Remplace ici
     method: "POST",
     body: JSON.stringify({commande: dataCommande}),
     headers: {"Content-Type": "application/json"}
