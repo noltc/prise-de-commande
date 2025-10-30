@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+header {
+  background-color: #ff8800;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+#categories, #menu {
+  flex: 2;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#cat-list, #produits {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.categorie, .produit {
+  background: #fff4e0;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.categorie:hover, .produit:hover {
+  transform: scale(1.05);
+}
+
+.produit img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  background: #ff8800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+#panier {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#panier ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}

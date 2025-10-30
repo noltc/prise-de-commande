@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prise de Commande</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍽️ Prise de Commande</h1>
+  </header>
+
+  <main>
+    <!-- Écran Catégories -->
+    <section id="categories">
+      <h2>Choisissez une catégorie</h2>
+      <div id="cat-list"></div>
+    </section>
+
+    <!-- Écran Produits -->
+    <section id="menu" class="hidden">
+      <button id="retour">⬅ Retour</button>
+      <h2 id="titre-categorie"></h2>
+      <div id="produits"></div>
+    </section>
+
+    <!-- Panier -->
+    <aside id="panier">
+      <h2>Panier</h2>
+      <ul id="panier-liste"></ul>
+      <p>Total : <span id="total">0.00</span> €</p>
+      <button id="valider">✅ Valider la commande</button>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
